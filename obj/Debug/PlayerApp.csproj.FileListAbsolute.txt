@@ -1,0 +1,16 @@
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\bin\Debug\PlayerApp.exe.config
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\bin\Debug\PlayerApp.exe
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\bin\Debug\PlayerApp.pdb
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\MainWindow.g.cs
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\App.g.cs
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp_MarkupCompile.cache
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp_MarkupCompile.lref
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\MainWindow.baml
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp.g.resources
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp.Properties.Resources.resources
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp.csproj.GenerateResource.cache
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp.csproj.CoreCompileInputs.cache
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp.exe
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp.pdb
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mmajer\VisualStudioProjects\PlayerApp\PlayerApp\obj\Debug\PlayerApp.csprojAssemblyReference.cache

@@ -1,0 +1,43 @@
+﻿<Window x:Class="PlayerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlayerApp"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" x:Name="MyWindow">
+
+    <Window.Resources>
+        <local:SecondTimeSpanConverter x:Key="MyTimeConverter"/>
+        <local:ToPercentageConverter x:Key="MyPercentageConverter"/>
+    </Window.Resources>
+    
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom" Width="{Binding ElementName=MyWindow, Path=Width}">
+            <StatusBarItem HorizontalAlignment="Center">
+                <Grid>
+                    <ProgressBar Width="300" Height="15" Value="{Binding ElementName=TimerSlider, Path=Value}" Maximum="{Binding ElementName=TimerSlider, Path=Maximum}"/>
+                    <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Center">
+                        <TextBlock.Text>
+                            <MultiBinding Converter="{StaticResource MyPercentageConverter}" StringFormat="{}{0:p}">
+                                <Binding ElementName="TimerSlider" Path="Value"></Binding>
+                                <Binding ElementName="TimerSlider" Path="Maximum"></Binding>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </Grid>
+            </StatusBarItem>
+          </StatusBar>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
+            <Button Click="PlayButton">Play</Button>
+            <Button Click="PauseButton">Pause</Button>
+            <Button Click="StopButton">Stop</Button>
+            <Label Content="Volume: "></Label>
+            <Slider Value="{Binding ElementName=VideoWindow, Path=Volume}" Maximum="1" Width="100"></Slider>
+            <Label Content="Time: "></Label>
+            <Slider Width="300" x:Name="TimerSlider" ValueChanged="ValueChanged"></Slider>
+            <Label x:Name="HowVideoWatched" Content="{Binding ElementName=TimerSlider, Path=Value, Converter={StaticResource MyTimeConverter}}"/>
+            <Label x:Name="FullTimeOfVideo"/>
+        </WrapPanel>
+        <MediaElement Source="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" Volume="0.00" LoadedBehavior="Manual" x:Name="VideoWindow" MediaFailed="MediaFailed" MediaOpened="MediaOpened" Thumb.DragStarted="DragStarted" Thumb.DragCompleted="DragCompleted" />
+    </DockPanel>
+</Window>
